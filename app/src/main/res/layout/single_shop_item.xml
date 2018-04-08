@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#2E2E2E">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/default_pp"
+        android:layout_margin="10dp"
+        android:id="@+id/user_shop_image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mana_123"
+        android:textColor="@android:color/white"
+          android:id="@+id/user_shop_name"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/anton"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_shop_name"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/anton"
+        android:layout_marginLeft="70dp"
+        android:textColor="@android:color/white"
+        android:text="0h"
+        android:id="@+id/shop_post_time"
+        android:textAlignment="center"
+        />
+
+    <ImageButton
+        android:id="@+id/shop_item_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/shop_mnu" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_below="@+id/shop_post_time"
+        android:layout_marginTop="2dp"
+        android:text="SELLING ANYTHING ANYTIME"
+        android:fontFamily="@font/anton"
+        android:textColor="@android:color/white"
+        android:id="@+id/shop_post_name"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/shop_post_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/shop_post_image"
+        android:drawingCacheQuality="high"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shop_post_image"
+        android:layout_marginLeft="30dp"
+        android:text="    OFFER"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/anton"
+        android:drawableLeft="@mipmap/tag"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:id="@+id/shop_post_offer"/>
+
+    <TextView
+        android:id="@+id/shop_offer_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/shop_post_offer"
+        android:layout_below="@+id/shop_post_offer"
+        android:drawableLeft="@mipmap/place"
+        android:fontFamily="@font/anton"
+        android:text="     LOCATION"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
+</android.support.v7.widget.CardView>

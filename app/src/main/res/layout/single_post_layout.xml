@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#008884">
+
+        <ImageView
+            android:id="@+id/posts_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:background="#E3EAEE"
+            android:drawingCacheQuality="high" />
+
+        <TextView
+            android:id="@+id/topic_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/posts_image"
+            android:layout_margin="10dp"
+            android:text="TOPIC HEAD"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:fontFamily="@font/anton"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/topic_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/topic_head"
+            android:layout_below="@+id/topic_head"
+            android:text="TOPIC DESC ..."
+            android:textColor="@android:color/white"
+            android:textSize="13dp"
+            android:fontFamily="@font/aldrich"
+            android:textStyle="normal" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/posts_publisher_image"
+            android:layout_width="51dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/topic_desc"
+            android:layout_margin="8dp"
+            />
+
+        <TextView
+            android:id="@+id/posts_publisher_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/posts_publisher_image"
+            android:layout_below="@+id/topic_desc"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:text="Username"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/anton"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time_ago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/posts_publisher_image"
+            android:layout_below="@id/posts_publisher_name"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/autour_one"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/redlike"
+            android:layout_below="@+id/time_ago"
+            android:id="@+id/likes_count"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/anton"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/comment"
+            android:layout_below="@+id/time_ago"
+            android:id="@+id/comments_count"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/anton"
+            android:layout_alignLeft="@+id/likes_count"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_below="@id/likes_count"
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#008884"
+                android:drawableLeft="@mipmap/heart"
+                android:padding="10dp"
+                android:id="@+id/likebtn"
+                android:text="Like"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/anton"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#008884"
+                android:drawableLeft="@mipmap/comment"
+                android:padding="10dp"
+                android:text="Comment"
+                android:textColor="@android:color/white"
+                android:id="@+id/commenbtn"
+                android:fontFamily="@font/anton"
+
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

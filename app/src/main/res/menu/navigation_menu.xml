@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/friends"
+        android:icon="@mipmap/f_icon"
+        android:title="FRIENDS" />
+    <item
+        android:id="@+id/requests"
+        android:icon="@mipmap/request"
+        android:title="REQUESTS"/>
+    <item
+        android:id="@+id/settings"
+        android:icon="@mipmap/settings_icon"
+        android:title="PROFILE SETTINGS" />
+    <item
+        android:id="@+id/movies"
+        android:icon="@mipmap/movies_icon"
+        android:title="MOVIES" />
+    <item
+        android:id="@+id/news"
+        android:icon="@mipmap/shop"
+        android:title="SHOP" />
+    <item
+        android:id="@+id/posts"
+        android:icon="@mipmap/posts_icon"
+        android:title="POSTS" />
+    <item
+        android:id="@+id/save"
+        android:icon="@mipmap/television"
+        android:title="TV SERIES" />
+    <item
+        android:id="@+id/log_out"
+        android:icon="@mipmap/exit"
+        android:title="LOG OUT" />
+</menu>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="#2E2E2E">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="#FF0068"
+        android:id="@+id/rel1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:text="   ADD MERCHANT"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/anton"
+            android:drawableLeft="@mipmap/alert_store"/>
+
+
+    </RelativeLayout>
+    <EditText
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alert_edit_back"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/rel1"
+    android:textColor="@android:color/white"
+    android:textAlignment="center"
+    android:textColorHint="@android:color/white"
+    android:hint="ENTER MERCHANISE DETAILS"
+    android:fontFamily="@font/anton"
+    android:layout_margin="5dp"
+        android:id="@+id/add_merchant_detail"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/add_merchant_detail"
+        android:layout_margin="5dp"
+        android:id="@+id/lin_2">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LOCATION"
+            android:fontFamily="@font/anton"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@mipmap/place"
+            android:background="#707070"
+            android:id="@+id/btn_add_location"
+            android:paddingLeft="5dp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#707070"
+            android:fontFamily="@font/anton"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@mipmap/whit_gal"
+            android:text="ADD IMAGE"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/btn_add_image"
+            android:paddingLeft="5dp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/anton"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@mipmap/tag"
+            android:background="#707070"
+            android:text="ADD PRICE"
+            android:layout_marginLeft="3dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/btn_add_price"
+            />
+
+    </LinearLayout>
+<RelativeLayout
+    android:layout_height="53dp"
+    android:layout_width="match_parent"
+    android:layout_below="@id/lin_2"
+    android:background="#FF0068"
+    >
+
+    <Button
+        android:id="@+id/shop_post_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@mipmap/csymbol"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/anton"
+       android:text="   SUBMIT"
+        android:textSize="20dp"
+        android:background="#FF0068"
+
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+
+
+</RelativeLayout>
+</RelativeLayout>

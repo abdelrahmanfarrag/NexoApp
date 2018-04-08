@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#2E2E2E">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.mana.nexo_app.activities.UserProfileActivity">
+
+        <ImageView
+            android:id="@+id/user_profile_cover"
+            android:layout_width="match_parent"
+            android:layout_height="304dp"
+            android:alpha=".65"
+            android:background="@mipmap/defualt_cover" />
+
+        <ImageButton
+            android:id="@+id/user_send_msg"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@mipmap/msgicon" />
+
+        <ImageButton
+            android:id="@+id/back_action"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/user_send_msg"
+            android:layout_marginStart="17dp"
+            android:background="@mipmap/backbtn" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_profile_picture"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/user_send_msg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="41dp"
+            android:background="@mipmap/default_pp" />
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:layout_below="@+id/user_profile_cover"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="#00C3F5">
+
+            <TextView
+                android:id="@+id/user_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/anton"
+                android:padding="3dp"
+                android:text="USERNAME"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/user_profile_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_profile_name"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/aldrich"
+                android:padding="3dp"
+                android:text="SAMPLE STATUS"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/user_profile_lives"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_profile_status"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@mipmap/place"
+                android:fontFamily="@font/aldrich"
+                android:padding="3dp"
+                android:text="LIVES"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/user_profile_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_profile_lives"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@mipmap/user_work"
+                android:fontFamily="@font/anton"
+                android:padding="3dp"
+                android:text="WORKS"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/relative1"
+            android:layout_centerHorizontal="true"
+            android:background="#FF0068"
+            android:id="@+id/relative2">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_above="@+id/textView"
+                android:layout_alignEnd="@+id/textView"
+                android:layout_marginEnd="14dp"
+                android:background="@mipmap/frns" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="38dp"
+                android:layout_toStartOf="@+id/textView2"
+                android:fontFamily="@font/anton"
+                android:text="FRIENDS"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/user_friends_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageButton"
+
+                android:layout_below="@+id/textView"
+                android:layout_marginEnd="11dp"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/anton"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_above="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/postg" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton2"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/anton"
+                android:text="POSTS"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/user_posts_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/user_friends_count"
+                android:layout_alignBottom="@+id/user_friends_count"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/anton"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_above="@+id/textView2"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_marginStart="15dp"
+                android:background="@mipmap/userlike" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton3"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/textView2"
+                android:fontFamily="@font/anton"
+                android:text="LIKES"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/user_likes_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/user_posts_count"
+                android:layout_alignBottom="@+id/user_posts_count"
+                android:layout_alignEnd="@+id/imageButton3"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/anton"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/relative2"
+            android:layout_marginTop="31dp"
+
+            android:background="@drawable/user_image"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@mipmap/plujs"
+            android:fontFamily="@font/anton"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/send_request"
+            android:padding="5dp"/>
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/send_request"
+            android:id="@+id/user_cancel_request"
+            android:background="@drawable/cancel_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:text="CANCEL FRIEND REQUEST"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/anton"
+            android:drawableLeft="@mipmap/multiply"
+            />
+    </RelativeLayout>
+</ScrollView>

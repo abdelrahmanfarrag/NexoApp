@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "163962420042",
+    "firebase_url": "https://nexoapp-8c5db.firebaseio.com",
+    "project_id": "nexoapp-8c5db",
+    "storage_bucket": "nexoapp-8c5db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163962420042:android:0b5418de1c52370e",
+        "android_client_info": {
+          "package_name": "com.example.mana.nexo_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163962420042-khstsf0kbpn06r9903uh8adasgfin7cm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mana.nexo_app",
+            "certificate_hash": "3a8a8aaebe2f9d8723380663d8c9459eabe6ca87"
+          }
+        },
+        {
+          "client_id": "163962420042-8v68bdftk9033tfeu81tkukm7fsc6o5u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBQ3V-Sk1nimC4qgh6TPCLtvy5x1c-AaQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163962420042-8v68bdftk9033tfeu81tkukm7fsc6o5u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

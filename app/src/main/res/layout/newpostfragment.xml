@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="#F8F2F2">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="15dp"
+        android:background="@mipmap/default_pp"
+        android:id="@+id/addpost_userImage"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addpost_userImage"
+
+        android:text="USERNAME"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#EFE2E2"
+        android:layout_below="@+id/addpost_userImage"
+        android:hint="Post Head ....."
+        android:textColorHint="@android:color/darker_gray"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:id="@+id/addpost_posthead"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/addpost_posthead"
+        android:hint="Post Description ....."
+        android:textColorHint="@android:color/darker_gray"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/addpost_postdesc"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/addpost_postdesc"
+        android:background="#F8F2F2"
+        android:id="@+id/lin">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/gallery"
+            android:text="Add Photo"
+            android:id="@+id/addimage"
+            android:background="@android:color/white"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/location"
+            android:text="Add Location"
+            android:background="@android:color/white"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="POST IT"
+        android:layout_below="@+id/lin"
+        android:background="#EEDDDD"
+        android:id="@+id/addpost_btn"
+        />
+
+</RelativeLayout>

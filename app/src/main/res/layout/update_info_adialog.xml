@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="30dp"
+    android:background="@drawable/alert_background">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="30dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE INFO"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:id="@+id/anytext"/>
+
+    <EditText
+        android:id="@+id/new_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/anytext"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter new Info ..."
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@android:color/white"
+        android:background="#00C3F5"
+        android:text="UPDATE"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:id="@+id/button"
+        android:textStyle="bold"
+        android:layout_below="@+id/new_info"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>
+    </android.support.v7.widget.CardView>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mana.nexo_app.activities.TvSeries_Details"
+    android:orientation="vertical"
+    android:background="#2E2E2E">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/first_card">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DF8116">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_marginTop="5dp"
+                android:text="SERIE NAME"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:fontFamily="@font/anton"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/serie_detail_name"
+                android:textAlignment="center"/>
+            <ImageView
+                android:layout_width="79dp"
+                android:layout_height="105dp"
+                android:layout_marginTop="49dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/serie_detail_image"/>
+
+            <TextView
+                android:id="@+id/serie_detail_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/serie_detail_image"
+                android:layout_marginStart="17dp"
+                android:layout_toEndOf="@+id/serie_detail_image"
+                android:fontFamily="@font/anton"
+                android:padding="5dp"
+                android:text="RATING"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/serie_detail_seasons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/serie_details_episodes"
+                android:layout_alignStart="@+id/serie_detail_rate"
+                android:layout_marginBottom="31dp"
+                android:fontFamily="@font/anton"
+                android:padding="5dp"
+                android:text="SEASONS"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/serie_details_episodes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/serie_detail_image"
+                android:layout_alignStart="@+id/serie_detail_seasons"
+                android:fontFamily="@font/anton"
+                android:padding="5dp"
+                android:text="EPISODES"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/serie_details_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/serie_details_episodes"
+                android:layout_below="@+id/serie_detail_image"
+                android:fontFamily="@font/anton"
+                android:padding="5dp"
+                android:text="LANGUAGES"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:textAlignment="center"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/first_card"
+        android:id="@+id/second_card">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#74550C">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:id="@+id/serie_overview_background"
+                android:alpha=".19"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OVERVIEW"
+                android:padding="5dp"
+                android:fontFamily="@font/anton"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OVERVIEW_content"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:fontFamily="@font/anton"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:id="@+id/serie_detail_overview"
+                android:textAlignment="center"
+                />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/serie_detail_view_seasons"
+        android:layout_below="@id/second_card"
+        android:layout_margin="5dp"></android.support.v7.widget.RecyclerView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        android:layout_below="@+id/serie_detail_view_seasons"
+        android:layout_centerHorizontal="true"
+android:id="@+id/serie_community"
+        android:text="COMMUNITY"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/anton"
+        android:background="@drawable/serie_btn"/>
+</RelativeLayout>
+</ScrollView>

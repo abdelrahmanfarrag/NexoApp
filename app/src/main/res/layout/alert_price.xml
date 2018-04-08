@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="#2E2E2E"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/price_lin"
+        android:background="#FF0068"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:text="  ENTER PRICE"
+            android:fontFamily="@font/anton"
+            android:drawableLeft="@mipmap/tag"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@id/price_lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Price in Egyptian Pounds "
+        android:layout_margin="5dp"
+        android:fontFamily="@font/anton"
+        android:textColor="@android:color/white"
+        android:id="@+id/default_text_price"/>
+
+    <EditText
+        android:id="@+id/edit_getprice"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/default_text_price"
+        android:layout_marginEnd="8dp"
+        android:background="#707070"
+        android:textColor="@android:color/white" />
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="30dp"
+       android:layout_below="@+id/edit_getprice"
+       android:layout_marginTop="5dp"
+       android:background="#FF0068"
+       android:id="@+id/relat_click">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="  OK"
+           android:drawableLeft="@mipmap/csymbol"
+           android:layout_centerInParent="true"
+           android:textColor="@android:color/white"
+           android:fontFamily="@font/anton"
+
+           android:id="@+id/submit_price"
+           android:background="@android:color/transparent"/>
+   </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

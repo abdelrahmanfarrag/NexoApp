@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/alert_background"
+    android:backgroundTintMode="src_over">
+
+
+
+        <ImageView
+            android:id="@+id/alert_emoticons"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp" />
+
+        <TextView
+            android:id="@+id/alert_text"
+            android:layout_width="337dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/alert_emoticons"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Account Created Succesffully"
+            android:textAlignment="center"
+            android:textColor="#551867"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/do_work"
+            android:layout_width="337dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/alert_text"
+
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:background="#551867"
+            android:text="DONE !"
+            android:textAlignment="center"
+
+
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+    </RelativeLayout>

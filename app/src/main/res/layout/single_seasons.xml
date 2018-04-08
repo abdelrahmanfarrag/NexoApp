@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:id="@+id/season_rakm"
+        android:fontFamily="@font/anton"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        />
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/season_cover"
+        android:scaleType="fitXY"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/season_rakm"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/season_cover"
+        android:id="@+id/episdoes_cont"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/anton"
+        android:textSize="15dp"/>
+
+
+
+</RelativeLayout>
